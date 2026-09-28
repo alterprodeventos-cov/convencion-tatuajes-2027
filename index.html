@@ -111,6 +111,33 @@ footer{padding:45px 0;border-top:1px solid var(--line);color:#777}
 .countdown b{display:block;font-size:1.55rem;color:#fff;line-height:1}
 .countdown span{display:block;color:#777;font-size:.62rem;text-transform:uppercase;letter-spacing:.12em;margin-top:6px}
 @media(max-width:520px){.countdown{grid-template-columns:repeat(2,1fr)}}
+
+/* PREVENTA DE STANDS */
+.stands-section{padding:90px 20px;background:linear-gradient(180deg,#0a0a0a,#111)}
+.stands-wrap{max-width:1120px;margin:auto}
+.stands-kicker{text-align:center;color:#e53935;font-weight:900;letter-spacing:3px;text-transform:uppercase;font-size:.82rem}
+.stands-title{text-align:center;font-size:clamp(2.2rem,5vw,4rem);font-weight:1000;margin:10px 0 12px;text-transform:uppercase}
+.stands-subtitle{text-align:center;max-width:760px;margin:0 auto 42px;color:#bbb;font-size:1.05rem;line-height:1.65}
+.stands-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.stand-card{position:relative;background:#151515;border:1px solid #2c2c2c;border-radius:18px;padding:34px;overflow:hidden;box-shadow:0 15px 45px rgba(0,0,0,.28)}
+.stand-card:before{content:"";position:absolute;left:0;top:0;right:0;height:4px;background:#e53935}
+.stand-card.sponsor:before{background:#d8b15a}
+.stand-tag{display:inline-block;padding:7px 11px;border-radius:999px;background:#241010;color:#ff5a55;font-size:.72rem;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}
+.sponsor .stand-tag{background:#252015;color:#e5c46b}
+.stand-card h3{font-size:1.7rem;margin:18px 0 5px;text-transform:uppercase}
+.stand-price{font-size:2.45rem;font-weight:1000;margin:0 0 4px}
+.stand-price span{font-size:.9rem;color:#aaa;font-weight:700}
+.stand-size{color:#e53935;font-weight:900;margin-bottom:24px}
+.stand-list{list-style:none;padding:0;margin:0 0 28px}
+.stand-list li{margin:12px 0;color:#ddd;line-height:1.45}
+.stand-list li:before{content:"✓";color:#e53935;font-weight:1000;margin-right:10px}
+.stand-note{font-size:.9rem;color:#aaa;border-top:1px solid #2a2a2a;padding-top:18px;line-height:1.55}
+.stand-deadline{margin:18px 0;padding:14px 16px;background:#211010;border:1px solid #4a2020;border-radius:10px;color:#fff;font-weight:800}
+.stand-cta{display:inline-flex;align-items:center;justify-content:center;width:100%;padding:15px 18px;border-radius:10px;background:#e53935;color:#fff;text-decoration:none;font-weight:1000;text-transform:uppercase;letter-spacing:.5px;transition:.2s}
+.stand-cta:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.sponsor .stand-cta{background:#d8b15a;color:#111}
+.stands-foot{text-align:center;margin:30px auto 0;color:#999;font-size:.88rem}
+@media(max-width:760px){.stands-grid{grid-template-columns:1fr}.stand-card{padding:26px}.stands-section{padding:70px 16px}}
 </style>
 </head>
 <body>
@@ -120,7 +147,7 @@ footer{padding:45px 0;border-top:1px solid var(--line);color:#777}
     <nav class="navlinks">
       <a href="#evento">Evento</a><a href="#artistas">Artistas</a><a href="#competencias">Competencias</a>
       <a href="#entradas">Entradas</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a>
-    </nav>
+    <a href="#stands">STANDS</a></nav>
     <button class="menu" aria-label="Abrir menú">☰</button>
   </div>
 </header>
@@ -268,6 +295,99 @@ footer{padding:45px 0;border-top:1px solid var(--line);color:#777}
 </div>
 </section>
 </main>
+
+
+<!-- PREVENTA DE STANDS -->
+<section class="stands-section" id="stands">
+  <div class="stands-wrap">
+    <div class="stands-kicker">5ª Convención de Tatuajes San Lorenzo</div>
+    <h2 class="stands-title">Preventa de Stands</h2>
+    <p class="stands-subtitle">
+      Asegurá tu espacio para el 17 y 18 de julio de 2027.
+      Elegí entre stand completo, stand compartido o consultá nuestras propuestas comerciales para marcas y sponsors.
+    </p>
+
+    <div class="stands-grid">
+      <article class="stand-card">
+        <span class="stand-tag">Para artistas</span>
+        <h3>Stand Completo</h3>
+        <div class="stand-price">$160.000</div>
+        <div class="stand-size">Espacio de 3 × 3 metros</div>
+
+        <ul class="stand-list">
+          <li>Mesa de apoyo</li>
+          <li>Silla</li>
+          <li>Zapatilla eléctrica</li>
+          <li>Espacio de trabajo para el artista</li>
+        </ul>
+
+        <div class="stand-deadline">
+          ⚡ Preventa: abonar el 100% antes del 01/12/2026.
+        </div>
+
+        <div class="stand-note">
+          <strong>Importante:</strong> la organización provee zapatilla eléctrica.
+          Se recomienda llevar una zapatilla personal como respaldo.
+          La disponibilidad de equipamiento y condiciones específicas se confirma al reservar.
+        </div>
+
+        <a class="stand-cta" target="_blank"
+           href="https://wa.me/5493476699743?text=Hola%21%20Quiero%20reservar%20un%20Stand%20Completo%20para%20la%205%C2%AA%20Convenci%C3%B3n%20de%20Tatuajes%20San%20Lorenzo.%20Quisiera%20consultar%20disponibilidad%20y%20condiciones.">
+          Reservar Stand Completo
+        </a>
+      </article>
+
+      <article class="stand-card">
+        <span class="stand-tag">Para artistas</span>
+        <h3>Stand Compartido</h3>
+        <div class="stand-price">$90.000 <span>por tatuador</span></div>
+        <div class="stand-size">Espacio de 3 × 3 metros compartido</div>
+
+        <ul class="stand-list">
+          <li>Mesa de apoyo</li>
+          <li>Silla</li>
+          <li>Zapatilla eléctrica</li>
+          <li>Espacio de trabajo para el artista</li>
+        </ul>
+
+        <div class="stand-deadline">
+          ⚡ Preventa: abonar el 100% antes del 01/12/2026.
+        </div>
+
+        <div class="stand-note">
+          <strong>Ideal para compartir espacio</strong> con otro tatuador.
+          La organización provee zapatilla eléctrica.
+          Se recomienda llevar una zapatilla personal como respaldo.
+        </div>
+
+        <a class="stand-cta" target="_blank"
+           href="https://wa.me/5493476699743?text=Hola%21%20Quiero%20consultar%20por%20un%20Stand%20Compartido%20para%20la%205%C2%AA%20Convenci%C3%B3n%20de%20Tatuajes%20San%20Lorenzo.%20Ser%C3%ADamos%20%5BCANTIDAD%5D%20tatuador%2Fes.%20Quisiera%20consultar%20disponibilidad%20y%20condiciones.">
+          Consultar Stand Compartido
+        </a>
+      </article>
+
+      <article class="stand-card sponsor" style="grid-column:1 / -1">
+        <span class="stand-tag">Marcas & Sponsors</span>
+        <h3>Stands Sponsor</h3>
+        <p style="color:#ddd;line-height:1.7;max-width:760px">
+          ¿Tenés una marca y querés formar parte de la 5ª Convención de Tatuajes San Lorenzo?
+          Consultá nuestras opciones de presencia comercial, stands, sponsoreo y activaciones de marca.
+        </p>
+        <div class="stand-deadline" style="background:#211f15;border-color:#514525">
+          🤝 Propuesta Comercial personalizada
+        </div>
+        <a class="stand-cta" target="_blank"
+           href="https://wa.me/5493476699743?text=Hola%21%20Quiero%20solicitar%20la%20Propuesta%20Comercial%20para%20Marcas%20y%20Sponsors%20de%20la%205%C2%AA%20Convenci%C3%B3n%20de%20Tatuajes%20San%20Lorenzo.">
+          Solicitar Propuesta Comercial por WhatsApp
+        </a>
+      </article>
+    </div>
+
+    <p class="stands-foot">
+      Cupos sujetos a disponibilidad. La reserva queda confirmada una vez coordinada con la organización.
+    </p>
+  </div>
+</section>
 
 <footer>
 <div class="container footer-inner">
