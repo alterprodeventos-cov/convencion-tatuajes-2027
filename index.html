@@ -138,6 +138,18 @@ footer{padding:45px 0;border-top:1px solid var(--line);color:#777}
 .sponsor .stand-cta{background:#d8b15a;color:#111}
 .stands-foot{text-align:center;margin:30px auto 0;color:#999;font-size:.88rem}
 @media(max-width:760px){.stands-grid{grid-template-columns:1fr}.stand-card{padding:26px}.stands-section{padding:70px 16px}}
+
+/* LIENZOS */
+.lienzo-section{padding:85px 20px;background:#0d0d0d}
+.lienzo-wrap{max-width:900px;margin:auto;text-align:center}
+.lienzo-kicker{color:#e53935;font-weight:900;letter-spacing:3px;text-transform:uppercase;font-size:.82rem}
+.lienzo-title{font-size:clamp(2.3rem,5vw,4.2rem);font-weight:1000;text-transform:uppercase;margin:10px 0}
+.lienzo-text{max-width:700px;margin:0 auto 30px;color:#bbb;line-height:1.7;font-size:1.05rem}
+.lienzo-box{border:1px solid #333;background:linear-gradient(145deg,#171717,#101010);border-radius:20px;padding:38px 28px;box-shadow:0 15px 50px rgba(0,0,0,.35)}
+.lienzo-cta{display:inline-flex;align-items:center;justify-content:center;background:#e53935;color:#fff;text-decoration:none;font-weight:1000;text-transform:uppercase;letter-spacing:.6px;padding:16px 28px;border-radius:10px;transition:.2s}
+.lienzo-cta:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.lienzo-note{margin-top:18px;color:#777;font-size:.82rem}
+@media(max-width:600px){.lienzo-section{padding:65px 16px}.lienzo-box{padding:30px 20px}.lienzo-cta{width:100%}}
 </style>
 </head>
 <body>
@@ -147,7 +159,7 @@ footer{padding:45px 0;border-top:1px solid var(--line);color:#777}
     <nav class="navlinks">
       <a href="#evento">Evento</a><a href="#artistas">Artistas</a><a href="#competencias">Competencias</a>
       <a href="#entradas">Entradas</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a>
-    <a href="#stands">STANDS</a></nav>
+    <a href="#stands">STANDS</a><a href="#lienzo">LIENZO</a></nav>
     <button class="menu" aria-label="Abrir menú">☰</button>
   </div>
 </header>
@@ -386,6 +398,27 @@ footer{padding:45px 0;border-top:1px solid var(--line);color:#777}
     <p class="stands-foot">
       Cupos sujetos a disponibilidad. La reserva queda confirmada una vez coordinada con la organización.
     </p>
+  </div>
+</section>
+
+
+<!-- INSCRIPCIÓN DE LIENZOS -->
+<section class="lienzo-section" id="lienzo">
+  <div class="lienzo-wrap">
+    <div class="lienzo-kicker">¿Querés vivir la experiencia?</div>
+    <h2 class="lienzo-title">¿Querés ser Lienzo?</h2>
+    <div class="lienzo-box">
+      <p class="lienzo-text">
+        Formá parte de la <strong>5ª Convención de Tatuajes San Lorenzo</strong>
+        y viví la experiencia de ser tatuado por artistas durante el evento.
+        Completá el formulario de inscripción y recibí toda la información.
+      </p>
+      <a class="lienzo-cta" target="_blank" rel="noopener"
+         href="https://docs.google.com/forms/d/e/1FAIpQLSflfAosQRdV3j0e2DGeepvEbDmwI_-uIBt6V4P-SZQSry3a6g/viewform?usp=publish-editor">
+        🖤 QUIERO SER LIENZO
+      </a>
+      <div class="lienzo-note">El formulario se abrirá en una nueva pestaña.</div>
+    </div>
   </div>
 </section>
 
